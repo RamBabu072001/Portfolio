@@ -1,0 +1,90 @@
+@media screen and (max-width: 600px){
+    .home-screen{
+        background-image: url('./assets/Images/Imageself.jpg') 
+    } ;
+   
+}
+
+body{
+    font-family:'abhaya-libre';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+@keyframes yslide {
+       0%{transform: translateY(-100%);}
+       100%{transform: translateY(0%);}
+}
+
+@keyframes yslidereverse{
+     0%{transform: translateY(0%);}
+     100%{transform: translateY(100%);}
+}
+
+@keyframes autoShow{
+    0%{opacity: 0;
+        transform:scale(0.6) ;}
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes autohide{
+    0%{opacity: 1;
+        transform: translateY(0%);}
+    50%{
+        opacity: 0.5;
+        transform: translateY(50%);}
+
+    100%{
+        opacity: 0;
+        transform: translateY(100%);
+        display: hidden;
+    }
+}
+
+
+
+.show-x {
+          animation-name:autoShow ;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+          animation-timeline: view();
+          animation-range: entry 0% cover 40%;
+          animation-timing-function: ease-in-out;
+          animation-direction: normal;
+        }
+
+.show-x-delay {
+           animation-name: autoShow;
+          animation-duration: 1s;
+          
+          animation-fill-mode: forwards;
+          animation-timeline: view();
+          animation-range: entry 0% cover 20%;
+          animation-timing-function: ease-in-out;
+          animation-direction: normal;
+}
+
+.slide-y{
+            animation-name: yslide;
+          animation-duration: 0.7s;
+          animation-fill-mode: forwards;
+          /* animation-timeline: view(40%); */
+          animation-timing-function: ease-in-out;
+          animation-direction: normal;
+
+}
+
+.slide-y-delay{
+            animation-name: yslide;
+          animation-duration: 0.8s;
+          animation-fill-mode: forwards;
+          /* animation-timeline: view(40%); */
+          animation-timing-function: ease-in-out;
+          animation-direction: normal;
+}
