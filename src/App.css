@@ -1,9 +1,4 @@
-@media screen and (max-width: 600px){
-    .home-screen{
-        background-image: url('./assets/Images/Imageself.jpg') 
-    } ;
-   
-}
+
 
 body{
     font-family:'abhaya-libre';
